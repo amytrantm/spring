@@ -30,7 +30,7 @@ public class ReservationService {
         this.reservationRepository = reservationRepository;
     }
 
-    public List<RoomReservation> getRoomReservationForDate(Date date) {
+    public List<RoomReservation> getRoomReservationsForDate(Date date) {
         //list of room
         Iterable<Room> rooms = this.roomRepository.findAll();
         Map<Long, RoomReservation> roomReservationMap = new HashMap();
